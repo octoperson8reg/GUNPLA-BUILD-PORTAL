@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUNPLA BUILD PORTAL</title>
+  <link rel="stylesheet"href="css/style.css">
+  <script src="JS/script.js"defer></script>
+</head>
+<body>
+  <!-- ローディング画面 -->
+  <div id="loading" class="lording-overlay">
+    <div class="cockpit-ui">
+      <p class="system-text">Loading...</p>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ヘッダー -->
+  <header>
+    <h1><a href="index.html">GUNPLA BUILD PORTAL</a></h1>
+    <nav class="nav">
+      <ul>
+        <button id="theme-toggle" class="theme-switch" aria-label="テーマ切り替え">
+         <span class="switch-track">
+           <span class="switch-thumb">
+             <span class="theme-icon">🌙</span>
+           </span>
+         </span>
+        </button>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="review.html">レビュー</a></li>
+        <li><a href="peint.html">調色サポート</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- レビュー -->
+  <h2 class="theme">REVIEW</h2>
+  <p class="review-text">キットの詳細や、作るときのポイントをまとめた個人的なレビューです。
+    クリックすると見れます。
+  </p>
+  <!-- レビューのテンプレート -->
+  <div class="review">
+    <div class="review-card" data-target="barubatosu-adaput">
+      <div class="review-img">
+        <img src="img/20260712_113057.jpg" alt="ガンプラ画像">
+      </div>
+    </div>
+    <div class="review-card" data-target="gm-sniper2">
+      <div class="review-img">
+        <img src="img/20260712_114454.jpg" alt="ガンプラ画像">
+      </div>
+    </div>
+    <div class="review-card" data-target="age1">
+      <div class="review-img">
+        <img src="img/20260530_150000.jpg" alt="ガンプラ画像">
+      </div>
+    </div>
+    <div class="review-card" data-target="rx78-origin">
+      <div class="review-img">
+        <img src="img/20250613_225941.jpg" alt="ガンプラ画像">
+      </div>
+    </div>
+  </div>
+  <!-- クリック後の表示 -->
+  <div id="barubatosu-adaput" class="modal-overlay">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class="modal-body">
+        <div class="modal-img">
+          <img src="img/20260712_113057.jpg" alt="ガンプラ画像">
+        </div>
+        <div class="modal-text">
+          <h3>HG 1/144 ガンダムバルバトスアダプト</h3>
+          <div class="review-meta">
+            <span class="date">製作日: 2026/06/28</span>
+            <span class="rating">評価:★★★★★</span>
+          </div>
+          <p class="coment">
+            従来のフレームから可動域が広がり、素材が変更されたことで腕が武器の重さでへたれることがなくなり
+            様々なポーズを付けられるようになりました。ちなみにガンダムフレームが使用されているガンプラなら移植が可能です。
+            プレミアムバンダイ限定なので入手しにくいのが難点ですがガンダムバルバトスが好きな人には特におすすめです！
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gm-sniper2" class="modal-overlay">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class="modal-body">
+        <div class="modal-img">
+          <img src="img/20260712_114454.jpg" alt="ガンプラ画像">
+        </div>
+        <div class="modal-text">
+          <h3>HGUC 1/144 ジムスナイパーⅡ</h3>
+          <div class="review-meta">
+            <span class="date">製作日: 2026/05/03</span>
+            <span class="rating">評価:★★★★☆</span>
+          </div>
+          <p class="coment">
+            設定画のスタイリッシュな雰囲気を絶妙に落とし込んでいます。肩に引き出し機構ががあるため
+            ジムスナイパーⅡの代名詞である狙撃ポーズが綺麗にできます。関節などの接続軸は2010年代に発売したガンプラと
+            共通なのでカスタマイズが簡単にできます。個人的にHGジム系の中で傑作キットだと思います！
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div id="age1" class="modal-overlay">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class="modal-body">
+        <div class="modal-img">
+          <img src="img/20260530_150000.jpg" alt="ガンプラ画像">
+        </div>
+        <div class="modal-text">
+          <h3>HG 1/144 ガンダムAGE-1 ノーマル</h3>
+          <div class="review-meta">
+            <span class="date">製作日: 2026/04/16</span>
+            <span class="rating">評価:★★★★★</span>
+          </div>
+          <p class="coment">
+            15年前のキットとは思えないほど可動域が広くプロポーションも劇中に忠実。
+            色分けもかなり良くパーツの合わせ目も目立たないため、最新キットに匹敵するレベルでクオリティが高いです。
+            シンプルな構造で初心者にもおすすめです！！墨入れをするとさらにカッコよくなりますので是非挑戦してみてください。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div id="rx78-origin" class="modal-overlay">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <div class="modal-body">
+        <div class="modal-img">
+          <img src="img/20250613_225941.jpg" alt="ガンプラ画像">
+        </div>
+        <div class="modal-text">
+          <h3>MG 1/100 RX-78-02 ガンダム（GUNDAM THE ORIGIN版）</h3>
+          <div class="review-meta">
+            <span class="date">製作日: 2025/06/13</span>
+            <span class="rating">評価:★★★★☆</span>
+          </div>
+          <p class="coment">
+            ORIGIN版ならではのミリタリー感溢れる高密度なディテールと、人間の骨格を思わせる異次元の可動ギミックが素組みのままでも完璧に決まる傑作キットです。
+            唯一、全指可動ハンドの武器保持力だけが惜しいものの、それを補って余りあるプレイバリューと圧倒的な兵器としての説得力を誇っています。前期型と中期型を
+            選んで組める仕様も含め、まさに「1/100スケールにおけるRX-78の決定版」と言えるキットです!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 著作権について -->
+  <footer>
+    <p class="footer-text"><small>※本サイトは個人による趣味の製作記録であり、公式とは一切関係ありません。掲載している写真はすべて製作者本人が撮影したものです。</small></p>
+    <p class="copyright">&copy; 2026 octoperson.All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
